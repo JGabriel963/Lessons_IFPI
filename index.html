@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+     
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <a href="#">
+                <img id="img" src="img/My-Hero-Academia-¿Quien-es-el-padre-de-Izuku-Midoriya.jpg.webp" alt="perfil">
+            </a>
+            <div class="title">I'm João Gabriel</div>
+            <div class="prof">Estudante de Progamação no IFPI</div>
+        </div>
+        <div class="content">
+            <div class="text-content">
+                <div class="text">
+                <h3>Habilidades:</h3>
+                <ul>
+                    <li>- Comunicativo</li>
+                    <li>- Curioso</li>
+                    <li>- Proativo</li>
+                </ul>
+                </div>
+                <div class="hobbins">
+                    <h3>Hobbins</h3>
+                    <ul>
+                        <li>- Tocar violão</li>
+                        <li>- Ir ao cinema</li>
+                        <li>- Desenhar</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <div class="btn">
+                    <button><a href="https://github.com/JGabriel963"><img class="icon-github" src="img/icons8-github-48.png" alt="icone-github"></a></button>
+                    <button id="sug" onclick="aparecer()">Sugestão</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container-2">
+        <h2>Sugestão para o aproveitamento da disciplina</h2>
+
+        <ul>
+            <h3>Documentações:</h3>
+            <li>- documentação <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML</a></li>
+            <li>- documentação <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS</a></li>
+            <li>- documentação <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">JavaScript</a></li>
+        </ul>
+        <ul>
+            <h3>Canais do YouTube: </h3>
+            <li>- <a href="https://www.youtube.com/@CursoemVideo" target="_blank">Curso em video</a></li>
+            <li>- <a href="https://www.youtube.com/@MatheusBattisti">Mathes Battisti</a></li>
+            <li>- <a href="https://www.youtube.com/@OneBitCode">One Bit Code</a></li>
+        </ul>
+        <ul>
+            <h3>Dicas:</h3>
+            <li>- Desafios</li>
+            <li>- Criação de projetos reais</li>
+            <li>- Didática flexível</li>
+        </ul>
+        <div class="buttons">
+            <div class="btn2">
+                <button id="sug" onclick="remover()">X</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let box1 = document.querySelector(".container")
+        let box2 = document.querySelector(".container-2")
+        function aparecer() {
+            box1.classList.add("show");
+            box2.classList.add("show")
+        }
+        function remover() {
+            box1.classList.remove("show")
+            box2.classList.remove("show")
+        }
+    </script>
+</body>
+</html>
